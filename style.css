@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+line-height: 22px;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(5, 2, 47, 0.756), rgba(0, 0, 0, 0.5)),
+        url('banner.png') center center/cover no-repeat;
+    color: white;
+    padding: 2vw;
+}
+:is(h1,h2,h3){
+    color: rgba(0, 0, 0, 0.977);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-li a:hover {
+    color: rgb(249, 8, 56);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.content:not(h3,h2){
+    color: gray;
+}
+
+.right i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.herosection {
+    position: relative;
+    top: 20vh;
+    width: 96vw;
+    align-items: center;
+}
+
+.herosection span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 3.5rem;
+
+    text-align: center;
+}
+
+.herosection p {
+    width: 90vw;
+    text-align: center;
+    justify-self: center;
+    margin-top: 5vh;
+    font-size: smaller;
+    max-height: 24vh;
+    overflow: hidden;
+}
+
+.herosection button {
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.676);
+    color: white;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.courses {
+    background-color: white;
+    padding: 140px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courses h2 {
+    font-size: 3vw;
+    padding: 20px;
+}
+
+.coursediv {
+    display: flex;
+
+}
+
+.course-1a {
+    background-color: rgba(246, 141, 225, 0.297);
+    margin: 30px;
+    min-height: 50vh;
+    padding: 20px;
+    letter-spacing: 1px;
+    border-radius: 9px;
+}
+
+.course-1a:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
+}
+
+.course-1a h3 {
+    font-size: 2vw;
+    padding: 20px;
+    line-height: 30px;
+    align-self: center;
+}
+
+.global-img {
+    display: flex;
+    width: 80vw;
+    height: 50vh;
+    gap: 25px;
+    justify-content: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.globalcampus {
+    text-align: center;
+}
+
+.globalcampus h2 {
+    font-size: 3rem;
+    margin: 2vh;
+}
+
+.global-img img {
+    width: 25vw;
+    border-radius: 9px;
+    margin-top: 30px;
+    height: 60vh;
+}
+
+.global-img img:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+}
+.ourfacilities {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.faci-part{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+.ourfacilities img{
+    width: 23vw;
+    height: 35vh;
+    border-radius: 10px;
+
+}
+.ourfacilities img:hover{
+    box-shadow: 3px 3px 3px black;
+}
+.title-f h2{
+font-size: 3vw;
+margin-bottom: 2vh;
+
+}
+.title-f{
+    justify-content: center;
+text-align: center;
+}
+.faci h3{
+    font-size: 1.4vw;
+    padding: 10px;
+    
+}
+.faci{
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+   
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    justify-self: center;
+    margin-top: 90px;
+}
+.feedback h2{
+    font-size: 3vw;
+    padding: 3vw;
+    
+}
+
+.feedbakmsg{
+    background-color: rgba(255, 192, 203, 0.196);
+    display: flex;
+    margin: 20px;
+    height:auto;
+    min-height: 35vh;
+    width: 40vw;
+    border-radius: 10px;
+    justify-content: center;
+}
+.feedbakmsg p{
+    width: 70%;
+    justify-self: center;
+position: relative;
+top: 4vh;
+}
+.personimg{
+    position: relative;
+    top: 5vh;
+    left: 3vw;
+}
+.personintro{
+    width: 80vw;
+    padding: 0px;
+
+}
+.feedback img{
+    width: 4vw;
+    justify-content: center;
+    display: flex;
+    height:4vw;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+
+
+.personsfeedback{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+.feedback h3{
+top: 4vw;
+    left: 4vw;
+    position: relative;
+            padding: 30px;
+            font-size: 1.2vw;
+
+}
+#abhi{
+    position: relative;
+    top: 80px;
+}
+
+.footer button{
+    width: 15vw;
+    justify-content: center;
+    display: flex;
+    height: 3vw;
+    align-items: center;
+background-color: transparent;
+border: 2px solid white;
+color: white;
+}
+.footimg{
+background: linear-gradient(rgba(1, 0, 17, 0.756), rgba(0, 0, 0, 0.653)),
+        url('banner2.jpg') center center/cover no-repeat;
+    color: white;
+    height: 40vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .footimg h2 {
+        color: white;
+        font-size: 4vw;
+        line-height: 8vw;
+    }
+    .footercontact{
+        color: gray;
+                /* width: 80vw; */
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .footercontact   p{
+       padding: 30px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+
+
+
+@media screen and (max-width: 1008px) {
+    .header {
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }   
+
+    .nav-li {
+        display: none;
+
+    }
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .right i {
+        display: block;
+    }
+
+    .coursediv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .courses {
+        position: relative;
+        margin-top: 0;
+        width: 95vw;
+    }
+
+    .courses h2 {
+        font-size: 26px;
+        width: 95vw;
+        text-align: center;
+    }
+
+    .courses p {
+        width: 80vw;
+    }
+
+    .courses h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .coursediv {
+        align-self: center;
+    }
+
+    .globalcampus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .global-img {
+        flex-direction: column;
+        width: 60vw;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+    }
+
+    .global-img img {
+        width: 60vw;
+        height: 90vh;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .globalcampus p {
+        width: 90vw;
+        max-height: 70vh;
+        text-align: center;
+    }
+    .faci-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ourfacilities h2{
+        font-size: 9vw;
+    }
+    .faci{
+        width: 80vw;
+        
+    }
+    .faci img{
+        width: 80vw;
+        height: 50vh;
+        margin-top: 30px;
+    }
+    .faci h3{
+        font-size: 3VW;
+    }
+    .feedbakmsg img{
+        width: 6vw;
+        height: 6vw;
+    }
+     :is(h2,h3,h1)
+    {
+        line-height: 40px;
+    }   
+        .herosection span{
+            line-height: 65px;
+        }
+    
+    
+
+}
+@media (max-width:1000px) {
+    .personsfeedback{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .feedbakmsg{
+        width: 90vw;
+    }
+    .feedbakmsg img{
+        width: 7vw;
+        height: 7vh;
+    }
+
+}
+
+@media (max-width:428px) {
+    .global-img img {
+        width: 70vw;
+        height: 70vh;
+        align-self: center;
+        justify-self: center;
+    }
+    .ourfacilities h2{
+        font-size: 12vw;
+    }
+    .faci h3{
+        font-size: 5VW;
+    }
+    .feedbakmsg img{
+        width: 12vw;
+        height: 7vh;
+    }
+    .feedbakmsg h3{
+        font-size: 7vw;
+    }
+    .feedback h2{
+        font-size: 9vw;
+    }
+    :is(h2,h3,h1)
+    {
+        line-height: 40px;
+    }   
+        .herosection span{
+            line-height: 55px;
+        }
+          .footimg button{
+        font-size: 5vw;
+        height: 5vh;
+        width: 0px;
+    }
+    
+
+    
+}
+@media (max-width:591px) {
+    .footimg button{
+        font-size: 3vw;
+        width: 18vw;
+    }
+}
